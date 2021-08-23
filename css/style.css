@@ -1,0 +1,184 @@
+body {
+    width: displayWidth;
+    height: displayheight;
+    background-color: black;
+    background: black;
+    font-family: 'Roboto Mono', monospace;
+}
+@font-face {
+    src: url("font/AppleSDGothicNeoM.ttf");
+    font-family: "AppleSDGothicNeoM";
+}
+
+@font-face {
+    src: url("font/MYRIADPRO-REGULAR.OTF");
+    font-family: "MYRIADPRO-REGULAR";
+}
+
+@font-face {
+    src: url("font/RobotoMono-Thin.ttf");
+    font-family: "RobotoMono-Thin";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+canvas {
+    display: block;
+}
+
+.title {
+    display: flex;
+    position: absolute;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 7%;
+}
+
+.entericon {
+    display: flex;
+    position: absolute;
+    width: 200px;
+
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 9%;
+}
+
+.lan {
+    display: flex;
+    position: absolute;
+    width: 50px;
+
+    left: 6%;
+    bottom: 11%;
+}
+
+.con {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    width: fit-content;
+}
+
+.button {
+    display: flex;
+    position: relative;
+    
+    width: 4%; 
+    height: auto;
+    fill: white;
+
+}
+.button:hover { 
+    fill: #0f0;
+    
+}
+
+
+.textbox {
+    position: relative;
+    width: 50%;
+    
+
+}
+.textbox label {
+    position: relative;
+    top: 1px;
+    /* input 요소의 border-top 설정값 만큼 */
+    left: 1px;
+    /* input 요소의 border-left 설정값 만큼 */
+    padding: 0.8em 0.5em;
+    /* input 요소의 padding 값 만큼 */
+    color: #fff;
+    cursor: text;
+}
+.textbox input[type="text"] {
+    background: black;
+    color: #0f0;
+    width: 100%;
+    /* 원하는 너비 설정 */
+    height: auto;
+    /* 높이값 초기화 , XYZvh로 해도 될듯?*/
+    line-height: normal;
+    /* line-height 초기화 */
+    padding: .4em 1em;
+    /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+    font-family: inherit;
+    font-size: 1.4em;
+    /* 폰트 상속 */
+    border: 3px solid #fff;
+    border-radius: 0;
+    /* iSO 둥근모서리 제거 */
+    outline-style: none;
+    /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none;
+    /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.group{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 47%;
+    width: 75%;
+}
+
+
+.textbox2 {
+    position: absolute;
+    left: 75%;
+    top: 21.5%;
+    font-family: 'Roboto Mono', monospace;
+
+}
+.textbox2 label {
+    position: absolute;
+    top: 1px;
+    /* input 요소의 border-top 설정값 만큼 */
+    left: 1px;
+    /* input 요소의 border-left 설정값 만큼 */
+    padding: 0.8em 0.5em;
+    /* input 요소의 padding 값 만큼 */
+    color: none;
+    cursor: text;
+}
+.textbox2 input[type="text"] {
+    background: none;
+    color: #0f0;
+    width: 70%;
+    /* 원하는 너비 설정 */
+    height: auto;
+    /* 높이값 초기화 , XYZvh로 해도 될듯?*/
+    line-height: normal;
+    /* line-height 초기화 */
+    padding: .4em .5em;
+    /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+    font-family: inherit;
+    font-size: 1.5em;
+    /* 폰트 상속 */
+    border: 1.5px solid black;
+    
+    border-radius: 0;
+    /* iSO 둥근모서리 제거 */
+    outline-style: none;
+    /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none;
+    /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+h2{
+    z-index: 99;
+    color: white; 
+    font-family: RobotoMono-Thin; 
+    left: 88%; 
+    top:22.3%; 
+    position: absolute;    
+}
